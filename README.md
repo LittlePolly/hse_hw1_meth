@@ -54,13 +54,49 @@ SRR5836475
 
 8 Cell
 
+
+import matplotlib.pyplot as plt
+import pandas as pd
+file_name = pd.read_csv("s_8_cell.deduplicated.bedGraph", delimiter='\t', skiprows=1, header=None)
+plt.figure(figsize=[10, 5])
+plt.title("Гистограмму распределения метилирования цитозинов по хромосоме 8cell", fontsize=15)
+plt.xlabel("Процент метилированных цитозинов")
+plt.ylabel("Частота")
+plt.hist(file_name[3], bins=100, density=True)
+plt.show()
+
+
 ![image](https://user-images.githubusercontent.com/93220053/154860791-fcf062a2-6ac3-4f18-b0db-44c0b23d063b.png)
 
 ICM
 
+
+import matplotlib.pyplot as plt
+import pandas as pd
+file_name = pd.read_csv("s_ICM.deduplicated.bedGraph", delimiter='\t', skiprows=1, header=None)
+plt.figure(figsize=[10, 5])
+plt.title("Гистограмму распределения метилирования цитозинов по хромосоме ICM", fontsize=15)
+plt.xlabel("Процент метилированных цитозинов")
+plt.ylabel("Частота")
+plt.hist(file_name[3], bins=100, density=True)
+plt.show()
+
+
 ![image](https://user-images.githubusercontent.com/93220053/154860838-bd14057d-44e9-488f-b9ea-de6b1511fbca.png)
 
 Epiblast
+
+
+import matplotlib.pyplot as plt
+import pandas as pd
+file_name = pd.read_csv("s_Epiblast.deduplicated.bedGraph", delimiter='\t', skiprows=1, header=None)
+plt.figure(figsize=[10, 5])
+plt.title("Гистограмму распределения метилирования цитозинов по хромосоме Epiblast", fontsize=15)
+plt.xlabel("Процент метилированных цитозинов")
+plt.ylabel("Частота")
+plt.hist(file_name[3], bins=100, density=True)
+plt.show()
+
 
 ![image](https://user-images.githubusercontent.com/93220053/154860885-7d4148c6-2f02-494c-be6e-0a9561a25f0f.png)
 
