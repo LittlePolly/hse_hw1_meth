@@ -56,13 +56,21 @@ SRR5836475
 
 
 import matplotlib.pyplot as plt
+
 import pandas as pd
+
 file_name = pd.read_csv("s_8_cell.deduplicated.bedGraph", delimiter='\t', skiprows=1, header=None)
+
 plt.figure(figsize=[10, 5])
+
 plt.title("Гистограмму распределения метилирования цитозинов по хромосоме 8cell", fontsize=15)
+
 plt.xlabel("Процент метилированных цитозинов")
+
 plt.ylabel("Частота")
+
 plt.hist(file_name[3], bins=100, density=True)
+
 plt.show()
 
 
@@ -72,13 +80,21 @@ ICM
 
 
 import matplotlib.pyplot as plt
+
 import pandas as pd
+
 file_name = pd.read_csv("s_ICM.deduplicated.bedGraph", delimiter='\t', skiprows=1, header=None)
+
 plt.figure(figsize=[10, 5])
+
 plt.title("Гистограмму распределения метилирования цитозинов по хромосоме ICM", fontsize=15)
+
 plt.xlabel("Процент метилированных цитозинов")
+
 plt.ylabel("Частота")
+
 plt.hist(file_name[3], bins=100, density=True)
+
 plt.show()
 
 
@@ -88,13 +104,21 @@ Epiblast
 
 
 import matplotlib.pyplot as plt
+
 import pandas as pd
+
 file_name = pd.read_csv("s_Epiblast.deduplicated.bedGraph", delimiter='\t', skiprows=1, header=None)
+
 plt.figure(figsize=[10, 5])
+
 plt.title("Гистограмму распределения метилирования цитозинов по хромосоме Epiblast", fontsize=15)
+
 plt.xlabel("Процент метилированных цитозинов")
+
 plt.ylabel("Частота")
+
 plt.hist(file_name[3], bins=100, density=True)
+
 plt.show()
 
 
